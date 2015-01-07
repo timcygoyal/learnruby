@@ -1,0 +1,45 @@
+
+
+<% for i in 0...@obj.songs.length %>
+<p><%= @obj.songs[i].name %></p>
+<% end %>
+<p>amount is <%= @amount %></p>
+<p>loop is <%= @loop1 %></p>
+<% 7.times do %>
+	<p>
+	"hello"
+ </p>
+ <%  end %>
+
+<p>the first value of i is <%= i %></p>
+ <% 1.upto(10) do |i| %>
+ 	<% next if i==2 %>
+ 	<p><%= i %><p>
+ <% end %>
+
+ <p>accessing constant varible for class <%=Songlist::Class_Name %></p>
+
+ <p>the final value of i is <%= i %></p>
+
+ <p>the result of file write is <%= @result %>
+
+ <p>Module result is <%= @moduleresult %></p>
+
+ <p>comparison result is <%=@compareresult %></p>
+
+ <p>sum of two number is <%=@obj.num3 %></p>
+ <p>sum of two number from object 1 is <%=@obj1.num3 %></p>
+ <pre>File data is <%=@filedata %></pre>
+ <p>year <%= @time1.year %></p>
+ <p>day <%= @time1.day %></p>
+ <p>month <%= @time1.month %></p>
+ <p>week day <%= @time1.wday %></p>
+ <p>year day <%= @time1.yday %></p>
+ <p>time parameters is <%= @time1.to_a %></p>
+ <p>time utc is <%= @longvalues %></p>
+
+ <p>time zone is <%=@time1.zone %></p>
+ <p>utc off set <%=@time1.utc_offset %></p>
+ <p>local time is <%=@time1.localtime %></p>
+
+ <p>your result is <%=@checkresult1 %></p>
